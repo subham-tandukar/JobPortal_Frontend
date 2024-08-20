@@ -1,0 +1,103 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Himalayan View Resort",
+      "description": "Join our team and enjoy breathtaking views of the Himalayas!",
+      "job_designation": "Front Desk Receptionist",
+      "time_period": "6 - 8 Months",
+      "location": "Pokhara, Nepal",
+      "salary": "Negotiable",
+      "category": "5 Star Resort",
+      "employment_type": "Full-time"
+    },
+    {
+      "id": "2",
+      "title": "Mount Everest Lodge",
+      "description": "Exciting opportunity to work in the heart of the Himalayas!",
+      "job_designation": "Chef",
+      "time_period": "Permanent",
+      "location": "Namche Bazaar, Nepal",
+      "salary": "Competitive",
+      "category": "Mountain Lodge",
+      "employment_type": "Full-time"
+    },
+    {
+      "id": "3",
+      "title": "Buddha's Garden Hotel",
+      "description": "Experience tranquility in the garden paradise!",
+      "job_designation": "Housekeeping Staff",
+      "time_period": "4 - 6 Months",
+      "location": "Lumbini, Nepal",
+      "salary": "Negotiable",
+      "category": "Heritage Hotel",
+      "employment_type": "Intern"
+    },
+    {
+      "id": "4",
+      "title": "Annapurna Base Camp Tea House",
+      "description": "Seeking adventurous individuals to join our team at 4,130 meters!",
+      "job_designation": "Server",
+      "time_period": "Seasonal",
+      "location": "Annapurna Conservation Area, Nepal",
+      "salary": "Hourly Wage",
+      "category": "Tea House",
+      "employment_type": "Part-time"
+    },
+    {
+      "id": "5",
+      "title": "Yeti Guesthouse",
+      "description": "Embrace the Yeti spirit in our cozy guesthouse!",
+      "job_designation": "Tour Guide",
+      "time_period": "Flexible",
+      "location": "Langtang Valley, Nepal",
+      "salary": "Commission-based",
+      "category": "Guesthouse",
+      "employment_type": "Contract"
+    },
+    {
+      "id": "6",
+      "title": "Gurkha Inn",
+      "description": "Join our team and experience Gurkha hospitality!",
+      "job_designation": "Bartender",
+      "time_period": "Ongoing",
+      "location": "Kathmandu, Nepal",
+      "salary": "Negotiable",
+      "category": "Inn",
+      "employment_type": "Full-time"
+    },
+    {
+      "id": "7",
+      "title": "Sherpa Lodge",
+      "description": "Work in the Sherpa capital and explore the Khumbu region!",
+      "job_designation": "Porter",
+      "time_period": "3 - 5 Months",
+      "location": "Namche Bazaar, Nepal",
+      "salary": "Daily Wage",
+      "category": "Lodge",
+      "employment_type": "Temporary"
+    },
+    {
+      "id": "8",
+      "title": "Pashupati Plaza",
+      "description": "Be a part of the vibrant city life near the Pashupatinath Temple!",
+      "job_designation": "Sales Associate",
+      "time_period": "Part-time",
+      "location": "Kathmandu, Nepal",
+      "salary": "Hourly Wage",
+      "category": "Plaza",
+      "employment_type": "Part-time"
+    },
+    {
+      "id": "9",
+      "title": "Himalayan Summit Hotel",
+      "description": "Reach new heights with us at the Himalayan Summit Hotel!",
+      "job_designation": "Concierge",
+      "time_period": "Permanent",
+      "location": "Everest Base Camp, Nepal",
+      "salary": "Competitive",
+      "category": "Mountain Hotel",
+      "employment_type": "Full-time"
+    }
+  ]
+}
