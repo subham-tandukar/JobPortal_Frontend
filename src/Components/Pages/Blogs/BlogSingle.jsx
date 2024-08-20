@@ -4,6 +4,7 @@ import { blogSingle } from "../../../Redux/blogs/blogListApi";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { formattedDate } from "../../Modules/formattedDate";
+import fallbackImg from "../../../Assets/img/blog2.jpg";
 
 export default function BlogSingle() {
   const dispatch = useDispatch();
@@ -37,7 +38,11 @@ export default function BlogSingle() {
 
             <div class="featured__post">
               <div className="container max-w-[1280px] mx-auto">
-                <img src={blogDetails.Image.url} alt={blogDetails.Title} />
+                <img
+                  src={blogDetails.Image.url}
+                  onError={(e) => (e.target.src = fallbackImg)}
+                  alt={blogDetails.Title}
+                />
               </div>
             </div>
 

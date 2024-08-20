@@ -1513,7 +1513,7 @@ sup {
 }
 
 .userDropdown {
-  @apply absolute left-0 small:left-[-75%] z-[999] top-[100%] bg-white w-[250px] shadow-sm border border-[#eee] mt-5;
+  @apply absolute right-0 small:left-[-75%] z-[999] top-[100%] bg-white w-[250px] shadow-sm border border-[#eee] mt-5;
 }
 
 .userDropdown > a {

@@ -8,7 +8,7 @@ import BlogTwo from "../../Assets/img/blog2.jpg";
 import BlogThree from "../../Assets/img/blog3.jpg";
 import { useDispatch, useSelector } from "react-redux";
 import { blogList } from "../../Redux/blogs/blogListApi";
-
+import fallbackImg from '../../Assets/img/blog2.jpg';
 import Loader from "../Modules/Loader";
 import { formattedDate } from "../Modules/formattedDate";
 
@@ -21,7 +21,6 @@ export default function BlogSection() {
     dispatch(blogList());
   }, []);
 
-  console.log("Blog", blog_list.blogs.Values);
 
   return (
     <section className="blog__section py-10">
@@ -51,6 +50,9 @@ export default function BlogSection() {
                               layout="responsive"
                               src={Image}
                               alt={Title}
+                              onError={(e) =>
+                                (e.target.src = fallbackImg)
+                              }
                             />
                           </Link>
                         </figure>

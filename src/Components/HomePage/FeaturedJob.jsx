@@ -9,6 +9,7 @@ import { IoCashOutline } from "react-icons/io5";
 import { BsClock } from "react-icons/bs";
 import Loader from "../Modules/Loader";
 import SkeletonLoader from "../Modules/SkeletonLoader";
+import fallbackImg from "../../Assets/img/fallback.jpg";
 
 export default function FeaturedJob() {
   const dispatch = useDispatch();
@@ -54,6 +55,7 @@ export default function FeaturedJob() {
                             <div className="job-img">
                               <img
                                 src={ComLogo}
+                                onError={(e) => (e.target.src = fallbackImg)}
                                 alt={ComName + "-" + JobDesignation}
                               />
 

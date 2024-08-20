@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import Loader from "../Modules/Loader";
 import { jobList } from "../../Redux/jobLists/jobListApi";
 import SkeletonLoader from "../Modules/SkeletonLoader";
+import fallbackImg from "../../Assets/img/fallback.jpg";
 
 export default function AllJobSection() {
   const dispatch = useDispatch();
@@ -58,6 +59,7 @@ export default function AllJobSection() {
                               <div className="job-img">
                                 <img
                                   src={ComLogo}
+                                  onError={(e) => (e.target.src = fallbackImg)}
                                   alt={ComName + "-" + JobDesignation}
                                 />
                                 <div>

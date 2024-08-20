@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import { internList } from "../../Redux/intern/internApi";
 import Loader from "../Modules/Loader";
 import SkeletonLoader from "../Modules/SkeletonLoader";
+import fallbackImg from "../../Assets/img/fallback.jpg";
 
 export default function InternSection() {
   const dispatch = useDispatch();
@@ -57,6 +58,7 @@ export default function InternSection() {
                       <div className="job-img">
                         <img
                           src={ComLogo}
+                          onError={(e) => (e.target.src = fallbackImg)}
                           alt={ComName + "-" + JobDesignation}
                         />
                         <div>

@@ -5,7 +5,7 @@ import { FaFilter, FaArrowRightLong } from "react-icons/fa6";
 import { TfiLocationPin } from "react-icons/tfi";
 import { IoCashOutline } from "react-icons/io5";
 import { BsClock } from "react-icons/bs";
-
+import fallbackImg from "../../../Assets/img/fallback.jpg";
 import jobsData from "../../../fakeAPI/api.json";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../../Modules/Loader";
@@ -324,6 +324,9 @@ export default function JobSingle() {
                                   <div className="job-img">
                                     <img
                                       src={ComLogo}
+                                      onError={(e) =>
+                                        (e.target.src = fallbackImg)
+                                      }
                                       alt={ComName + "-" + JobDesignation}
                                     />
 

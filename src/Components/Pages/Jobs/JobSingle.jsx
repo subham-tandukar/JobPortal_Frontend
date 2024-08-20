@@ -9,7 +9,7 @@ import { formattedDate } from "../../Modules/formattedDate";
 import shareFacebok from "../../../Assets/img/facebook.png";
 import shareWhatsapp from "../../../Assets/img/whatsapp.png";
 import shareInstagram from "../../../Assets/img/instagram.png";
-
+import fallbackImg from "../../../Assets/img/fallback.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { TfiLocationPin } from "react-icons/tfi";
 import { IoCashOutline } from "react-icons/io5";
@@ -258,7 +258,8 @@ export default function JobSingle() {
                       <div className="job-item">
                         <div className="job-body">
                           <div className="job-img">
-                            <img src={ComLogo} alt="test" />
+                            <img src={ComLogo}
+onError={(e) => (e.target.src = fallbackImg)} alt="test" />
                             <span className="company-name">{ComName}</span>
 
                             <span className="partTime featured">
