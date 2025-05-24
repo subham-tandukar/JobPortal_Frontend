@@ -12,6 +12,7 @@ import LoginForm from "../Modules/LoginForm";
 
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
+import BASE_URL from "../../Constant";
 // import OAuth from "../../../components/OAuth"
 
 export default function Login() {
@@ -55,7 +56,7 @@ export default function Login() {
       dispatch(signInStart());
 
       const res = await fetch(
-        "https://jobportal-backend-g159.onrender.com/api/login",
+        `${BASE_URL}/api/login`,
         {
           method: "POST",
           headers: {

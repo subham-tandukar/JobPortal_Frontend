@@ -55,7 +55,7 @@ export default function Login() {
       dispatch(registerStart());
 
       const res = await fetch(
-        "https://jobportal-backend-g159.onrender.com/api/register",
+        `${BASE_URL}/api/register`,
         {
           method: "POST",
           headers: {

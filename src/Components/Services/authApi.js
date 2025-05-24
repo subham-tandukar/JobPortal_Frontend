@@ -1,8 +1,9 @@
 // authApi.js
 
 import axios from "axios";
+import BASE_URL from "../../Constant";
 
-const baseURL = "https://jobportal-backend-g159.onrender.com/api/admin";
+const baseURL = `${BASE_URL}/api/admin`;
 
 export const loginApi = async (username, password) => {
   try {

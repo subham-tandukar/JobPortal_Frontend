@@ -1,12 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import BASE_URL from "../../Constant";
 
 export const featuredList = createAsyncThunk(
   "featuredList",
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/featuredjob`
+        `${BASE_URL}/api/featuredjob`
       );
 
       return response.data;
@@ -27,7 +28,7 @@ export const featuredSingle = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/jobList/${data}`
+        `${BASE_URL}/api/jobList/${data}`
       );
 
       return response.data;

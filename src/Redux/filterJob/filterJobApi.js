@@ -1,12 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import BASE_URL from "../../Constant";
 
 export const filterJob = createAsyncThunk(
   "filterJob",
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/filterJob?${data}`
+        `${BASE_URL}/api/filterJob?${data}`
       );
 
       return response.data;
@@ -27,7 +28,7 @@ export const jobTypeApi = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/jobTypeList`
+        `${BASE_URL}/api/jobTypeList`
       );
 
       return response.data;
@@ -47,7 +48,7 @@ export const locationApi = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/location-count`
+        `${BASE_URL}/api/location-count`
       );
 
       return response.data;
@@ -67,7 +68,7 @@ export const categoryApi = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/categoryList`
+        `${BASE_URL}/api/categoryList`
       );
 
       return response.data;

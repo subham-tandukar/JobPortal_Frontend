@@ -1,6 +1,7 @@
 // actions.js
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import BASE_URL from "../../Constant";
 
 export const userInfo = createAsyncThunk(
   "userInfo",
@@ -11,7 +12,7 @@ export const userInfo = createAsyncThunk(
         "Content-Type": "application/json",
       };
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/userInfo`,
+        `${BASE_URL}/api/userInfo`,
         {
           headers,
         }
@@ -38,7 +39,7 @@ export const appliedList = createAsyncThunk(
         "Content-Type": "application/json",
       };
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/appliedList`,
+        `${BASE_URL}/api/appliedList`,
         {
           headers,
         }

@@ -6,6 +6,7 @@ import { isSignOut } from "../Redux/Auth/authSlice";
 
 import { LuUser2 } from "react-icons/lu";
 import { IoSettingsOutline } from "react-icons/io5";
+import BASE_URL from "../Constant";
 // import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
@@ -31,7 +32,7 @@ const Header = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch(`https://jobportal-backend-g159.onrender.com/api/signOut`);
+      await fetch(`${BASE_URL}/api/signOut`);
 
       dispatch(signOut());
       dispatch(isSignOut());

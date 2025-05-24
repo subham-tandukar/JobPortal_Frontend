@@ -1,12 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import BASE_URL from "../../Constant";
 
 export const blogList = createAsyncThunk(
   "blogList",
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/blogList`
+        `${BASE_URL}/api/blogList`
       );
 
       return response.data;
@@ -27,7 +28,7 @@ export const blogSingle = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(
-        `https://jobportal-backend-g159.onrender.com/api/blogList/${data}`
+        `${BASE_URL}/api/blogList/${data}`
       );
 
       return response.data;
